@@ -7,11 +7,10 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "nodemon backend/server.js",
     "data:import": "node backend/seeder.js",
     "data:destroy": "node backend/seeder.js -d",
-    "build": "npm install && npm install && npm run build"
+    "build": "echo 'No build step required for backend'"
   },
   "author": "Ajay Boro",
   "license": "MIT",
